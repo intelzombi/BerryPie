@@ -1,0 +1,205 @@
+﻿Build started 2/11/2012 9:00:37 PM.
+     1>Project "C:\projects\ProceduralContent\PCHarness\TreeOrchard\TreeOrchard.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "x64\Debug\TreeOrchard.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\CL.exe /c /IC:\projects\ProceduralContent\PCHarness\TreeOrchard\\Header /IC:\projects\ProceduralContent\PCHarness\\..\LOCAL_LIB\Header /IC:\projects\ProceduralContent\PCHarness\\..\extern\TinyXml /IC:\projects\ProceduralContent\PCHarness\\..\extern\Trees /IC:\projects\ProceduralContent\PCHarness\\..\extern\AssetImport /Zi /nologo /W3 /WX- /Od /D WIN32 /D _DEBUG /D _WINDOWS /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"x64\Debug\\" /Fd"x64\Debug\vc100.pdb" /Gd /TP /errorReport:prompt Source\TreeOrchard.cpp
+         TreeOrchard.cpp
+     1>c:\projects\proceduralcontent\pcharness\treeorchard\header\Vector3.h(1121): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\projects\proceduralcontent\pcharness\treeorchard\header\Vector3.h(1122): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>C:\projects\ProceduralContent\extern\AssetImport\AssetImport.h(79): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : see declaration of 'fopen'
+     1>C:\projects\ProceduralContent\extern\AssetImport\AssetImport.h(87): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(253) : see declaration of 'fscanf'
+     1>C:\projects\ProceduralContent\extern\AssetImport\AssetImport.h(88): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(253) : see declaration of 'fscanf'
+     1>C:\projects\ProceduralContent\extern\AssetImport\AssetImport.h(89): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(253) : see declaration of 'fscanf'
+     1>C:\projects\ProceduralContent\extern\AssetImport\AssetImport.h(93): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(253) : see declaration of 'fscanf'
+     1>C:\projects\ProceduralContent\extern\AssetImport\AssetImport.h(96): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(253) : see declaration of 'fscanf'
+     1>C:\projects\ProceduralContent\extern\AssetImport\AssetImport.h(101): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(253) : see declaration of 'fscanf'
+     1>C:\projects\ProceduralContent\extern\AssetImport\AssetImport.h(103): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(253) : see declaration of 'fscanf'
+     1>C:\projects\ProceduralContent\extern\AssetImport\AssetImport.h(105): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(253) : see declaration of 'fscanf'
+     1>C:\projects\ProceduralContent\extern\AssetImport\AssetImport.h(107): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(253) : see declaration of 'fscanf'
+     1>C:\projects\ProceduralContent\extern\AssetImport\AssetImport.h(113): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(253) : see declaration of 'fscanf'
+     1>C:\projects\ProceduralContent\extern\AssetImport\AssetImport.h(114): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(253) : see declaration of 'fscanf'
+     1>C:\projects\ProceduralContent\extern\AssetImport\AssetImport.h(115): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(253) : see declaration of 'fscanf'
+     1>C:\projects\ProceduralContent\extern\AssetImport\AssetImport.h(116): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(253) : see declaration of 'fscanf'
+     1>C:\projects\ProceduralContent\extern\AssetImport\AssetImport.h(119): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(253) : see declaration of 'fscanf'
+     1>C:\projects\ProceduralContent\extern\AssetImport\AssetImport.h(125): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(253) : see declaration of 'fscanf'
+     1>C:\projects\ProceduralContent\extern\AssetImport\AssetImport.h(129): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(253) : see declaration of 'fscanf'
+     1>C:\projects\ProceduralContent\extern\AssetImport\AssetImport.h(135): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(253) : see declaration of 'fscanf'
+     1>C:\projects\ProceduralContent\extern\AssetImport\AssetImport.h(136): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(253) : see declaration of 'fscanf'
+     1>C:\projects\ProceduralContent\extern\AssetImport\AssetImport.h(137): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(253) : see declaration of 'fscanf'
+     1>C:\projects\ProceduralContent\extern\AssetImport\AssetImport.h(138): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(253) : see declaration of 'fscanf'
+     1>C:\projects\ProceduralContent\extern\AssetImport\AssetImport.h(139): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(253) : see declaration of 'fscanf'
+     1>C:\projects\ProceduralContent\extern\AssetImport\AssetImport.h(140): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(253) : see declaration of 'fscanf'
+     1>C:\projects\ProceduralContent\extern\AssetImport\AssetImport.h(141): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(253) : see declaration of 'fscanf'
+     1>C:\projects\ProceduralContent\extern\AssetImport\AssetImport.h(142): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(253) : see declaration of 'fscanf'
+     1>C:\projects\ProceduralContent\extern\AssetImport\AssetImport.h(143): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(253) : see declaration of 'fscanf'
+     1>C:\projects\ProceduralContent\extern\AssetImport\AssetImport.h(144): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(253) : see declaration of 'fscanf'
+     1>C:\projects\ProceduralContent\extern\AssetImport\AssetImport.h(145): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(253) : see declaration of 'fscanf'
+     1>C:\projects\ProceduralContent\extern\AssetImport\AssetImport.h(146): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(253) : see declaration of 'fscanf'
+     1>C:\projects\ProceduralContent\extern\AssetImport\AssetImport.h(147): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(253) : see declaration of 'fscanf'
+     1>C:\projects\ProceduralContent\extern\AssetImport\AssetImport.h(148): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(253) : see declaration of 'fscanf'
+     1>C:\projects\ProceduralContent\extern\AssetImport\AssetImport.h(149): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(253) : see declaration of 'fscanf'
+     1>C:\projects\ProceduralContent\extern\AssetImport\AssetImport.h(150): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(253) : see declaration of 'fscanf'
+     1>C:\projects\ProceduralContent\extern\AssetImport\AssetImport.h(151): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(253) : see declaration of 'fscanf'
+     1>C:\projects\ProceduralContent\extern\AssetImport\AssetImport.h(152): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(253) : see declaration of 'fscanf'
+     1>Source\TreeOrchard.cpp(60): warning C4995: 'wsprintf': name was marked as #pragma deprecated
+     1>Source\TreeOrchard.cpp(60): warning C4995: 'wsprintfW': name was marked as #pragma deprecated
+     1>Source\TreeOrchard.cpp(60): warning C4129: 'T' : unrecognized character escape sequence
+     1>Source\TreeOrchard.cpp(67): warning C4995: 'wsprintf': name was marked as #pragma deprecated
+     1>Source\TreeOrchard.cpp(67): warning C4995: 'wsprintfW': name was marked as #pragma deprecated
+     1>Source\TreeOrchard.cpp(74): warning C4995: 'wsprintf': name was marked as #pragma deprecated
+     1>Source\TreeOrchard.cpp(74): warning C4995: 'wsprintfW': name was marked as #pragma deprecated
+     1>Source\TreeOrchard.cpp(81): warning C4995: 'wsprintf': name was marked as #pragma deprecated
+     1>Source\TreeOrchard.cpp(81): warning C4995: 'wsprintfW': name was marked as #pragma deprecated
+     1>Source\TreeOrchard.cpp(88): warning C4995: 'wsprintf': name was marked as #pragma deprecated
+     1>Source\TreeOrchard.cpp(88): warning C4995: 'wsprintfW': name was marked as #pragma deprecated
+     1>Source\TreeOrchard.cpp(95): warning C4995: 'wsprintf': name was marked as #pragma deprecated
+     1>Source\TreeOrchard.cpp(95): warning C4995: 'wsprintfW': name was marked as #pragma deprecated
+     1>Source\TreeOrchard.cpp(101): warning C4995: 'wsprintf': name was marked as #pragma deprecated
+     1>Source\TreeOrchard.cpp(101): warning C4995: 'wsprintfW': name was marked as #pragma deprecated
+     1>Source\TreeOrchard.cpp(105): warning C4996: 'wcstombs': This function or variable may be unsafe. Consider using wcstombs_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdlib.h(533) : see declaration of 'wcstombs'
+     1>Source\TreeOrchard.cpp(108): warning C4995: 'sprintf': name was marked as #pragma deprecated
+     1>Source\TreeOrchard.cpp(108): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : see declaration of 'sprintf'
+     1>Source\TreeOrchard.cpp(112): warning C4996: 'wcstombs': This function or variable may be unsafe. Consider using wcstombs_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdlib.h(533) : see declaration of 'wcstombs'
+     1>Source\TreeOrchard.cpp(115): warning C4995: 'sprintf': name was marked as #pragma deprecated
+     1>Source\TreeOrchard.cpp(115): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : see declaration of 'sprintf'
+     1>Source\TreeOrchard.cpp(119): warning C4996: 'wcstombs': This function or variable may be unsafe. Consider using wcstombs_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdlib.h(533) : see declaration of 'wcstombs'
+     1>Source\TreeOrchard.cpp(122): warning C4995: 'sprintf': name was marked as #pragma deprecated
+     1>Source\TreeOrchard.cpp(122): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : see declaration of 'sprintf'
+     1>Source\TreeOrchard.cpp(126): warning C4996: 'wcstombs': This function or variable may be unsafe. Consider using wcstombs_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdlib.h(533) : see declaration of 'wcstombs'
+     1>Source\TreeOrchard.cpp(130): warning C4995: 'sprintf': name was marked as #pragma deprecated
+     1>Source\TreeOrchard.cpp(130): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : see declaration of 'sprintf'
+     1>Source\TreeOrchard.cpp(218): warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+     1>Source\TreeOrchard.cpp(536): warning C4995: 'strcpy': name was marked as #pragma deprecated
+     1>Source\TreeOrchard.cpp(536): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(105) : see declaration of 'strcpy'
+     1>Source\TreeOrchard.cpp(537): warning C4995: 'strcpy': name was marked as #pragma deprecated
+     1>Source\TreeOrchard.cpp(537): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(105) : see declaration of 'strcpy'
+     1>Source\TreeOrchard.cpp(540): warning C4995: 'strcpy': name was marked as #pragma deprecated
+     1>Source\TreeOrchard.cpp(540): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(105) : see declaration of 'strcpy'
+     1>Source\TreeOrchard.cpp(543): warning C4995: 'strcpy': name was marked as #pragma deprecated
+     1>Source\TreeOrchard.cpp(543): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(105) : see declaration of 'strcpy'
+     1>Source\TreeOrchard.cpp(549): warning C4995: 'wsprintf': name was marked as #pragma deprecated
+     1>Source\TreeOrchard.cpp(549): warning C4995: 'wsprintfW': name was marked as #pragma deprecated
+     1>Source\TreeOrchard.cpp(552): warning C4995: 'wsprintf': name was marked as #pragma deprecated
+     1>Source\TreeOrchard.cpp(552): warning C4995: 'wsprintfW': name was marked as #pragma deprecated
+     1>Source\TreeOrchard.cpp(557): warning C4995: 'wsprintf': name was marked as #pragma deprecated
+     1>Source\TreeOrchard.cpp(557): warning C4995: 'wsprintfW': name was marked as #pragma deprecated
+     1>Source\TreeOrchard.cpp(559): warning C4482: nonstandard extension used: enum 'DXGI_FORMAT' used in qualified name
+     1>Source\TreeOrchard.cpp(568): warning C4482: nonstandard extension used: enum 'ILOType' used in qualified name
+     1>Source\TreeOrchard.cpp(572): warning C4482: nonstandard extension used: enum 'ILOType' used in qualified name
+     1>Source\TreeOrchard.cpp(906): warning C4018: '<' : signed/unsigned mismatch
+     1>Source\TreeOrchard.cpp(1434): warning C4482: nonstandard extension used: enum 'ILOType' used in qualified name
+     1>Source\TreeOrchard.cpp(1736): warning C4305: 'argument' : truncation from 'double' to 'float'
+     1>c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xutility(2144): warning C4244: '=' : conversion from 'wchar_t' to 'char', possible loss of data
+                 c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xutility(2165) : see reference to function template instantiation '_OutIt std::_Copy_impl<_InIt,_OutIt>(_InIt,_InIt,_OutIt,std::_Nonscalar_ptr_iterator_tag)' being compiled
+                 with
+                 [
+                     _OutIt=char *,
+                     _InIt=wchar_t *
+                 ]
+                 c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xutility(2196) : see reference to function template instantiation '_OutIt std::_Copy_impl<_InIt,char*>(_InIt,_InIt,_OutIt)' being compiled
+                 with
+                 [
+                     _OutIt=char *,
+                     _InIt=wchar_t *
+                 ]
+                 c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xutility(2206) : see reference to function template instantiation '_OutIt std::_Copy_impl<_InIt,_OutIt>(_InIt,_InIt,_OutIt,std::random_access_iterator_tag,std::random_access_iterator_tag)' being compiled
+                 with
+                 [
+                     _OutIt=std::_String_iterator<char,std::char_traits<char>,std::allocator<char>>,
+                     _InIt=wchar_t *
+                 ]
+                 c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xutility(2227) : see reference to function template instantiation '_OutIt std::_Copy_impl<wchar_t*,_OutIt>(_InIt,_InIt,_OutIt,std::tr1::true_type)' being compiled
+                 with
+                 [
+                     _OutIt=std::_String_iterator<char,std::char_traits<char>,std::allocator<char>>,
+                     _InIt=wchar_t *
+                 ]
+                 Source\TreeOrchard.cpp(472) : see reference to function template instantiation '_OutIt std::copy<std::_String_iterator<_Elem,_Traits,_Alloc>,std::_String_iterator<char,std::char_traits<char>,std::allocator<_Ty>>>(_InIt,_InIt,_OutIt)' being compiled
+                 with
+                 [
+                     _OutIt=std::_String_iterator<char,std::char_traits<char>,std::allocator<char>>,
+                     _Elem=wchar_t,
+                     _Traits=std::char_traits<wchar_t>,
+                     _Alloc=std::allocator<wchar_t>,
+                     _Ty=char,
+                     _InIt=std::_String_iterator<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>
+                 ]
+       ManifestResourceCompile:
+         All outputs are up-to-date.
+       Link:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"C:\projects\ProceduralContent\PCHarness\\TreeOrchard\x64\Debug\TreeOrchard.exe" /INCREMENTAL /NOLOGO d3d10.lib d3dx10d.lib C:\projects\ProceduralContent\PCHarness\\..\LOCAL_LIB\Devel\WinCPUIDlib.lib C:\projects\ProceduralContent\PCHarness\\..\LOCAL_LIB\Devel\LibCPUID.lib winmm.lib C:\projects\ProceduralContent\PCHarness\\..\extern\Trees\x64\Debug\Trees.lib C:\projects\ProceduralContent\PCHarness\\..\extern\AssetImport\x64\Debug\AssetImport.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"x64\Debug\TreeOrchard.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\projects\ProceduralContent\PCHarness\TreeOrchard\x64\Debug\TreeOrchard.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\projects\ProceduralContent\PCHarness\\TreeOrchard\x64\Debug\TreeOrchard.lib" /MACHINE:X64 x64\Debug\TreeOrchard.exe.embed.manifest.res
+         x64\Debug\Camera.obj
+         x64\Debug\CSVLogger.obj
+         x64\Debug\HighPerformanceCounter.obj
+         x64\Debug\INIFileReader.obj
+         x64\Debug\RandomNumber.obj
+         x64\Debug\EffectsManager.obj
+         x64\Debug\Light.obj
+         x64\Debug\SceneGraph.obj
+         x64\Debug\TextureManager.obj
+         x64\Debug\TreeOrchard.obj
+         x64\Debug\Vector3.obj
+         C:\projects\ProceduralContent\extern\Trees\x64\Debug\Trees.lib
+         TreeOrchard.vcxproj -> C:\projects\ProceduralContent\PCHarness\\TreeOrchard\x64\Debug\TreeOrchard.exe
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"x64\Debug\TreeOrchard.exe.embed.manifest" /manifest x64\Debug\TreeOrchard.exe.intermediate.manifest
+         All outputs are up-to-date.
+       LinkEmbedManifest:
+         All outputs are up-to-date.
+         TreeOrchard.vcxproj -> C:\projects\ProceduralContent\PCHarness\\TreeOrchard\x64\Debug\TreeOrchard.exe
+       FinalizeBuildStatus:
+         Deleting file "x64\Debug\TreeOrchard.unsuccessfulbuild".
+         Touching "x64\Debug\TreeOrchard.lastbuildstate".
+     1>Done Building Project "C:\projects\ProceduralContent\PCHarness\TreeOrchard\TreeOrchard.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.71

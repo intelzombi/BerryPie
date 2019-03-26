@@ -1,0 +1,10 @@
+
+cbuffer ceveryframe : register(b0)
+{
+	float4x4 gViewProj		: packoffset(c0);
+	float4 gEyePosW			: packoffset(c4);     
+	float4 gLightDir1W		: packoffset(c5);     
+	float4 gLightDir2W		: packoffset(c6);     
+	float4 gLightDir3W		: packoffset(c7);     
+};
+

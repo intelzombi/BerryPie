@@ -1,0 +1,12 @@
+VertexShader		ShadowMapLinear.vsh
+VSEntryPoint		ShadowMapVSLinear
+VSConstantBuffer	LIGHTEQ_EF_VS
+PixelShader			ShadowMapLinear.psh
+PSEntryPoint		ShadowMapPSLinear
+PSConstantBuffer	LIGHTEQ_EF_VS
+BlendState			NoBlending
+RasterizerState		DepthBiasCullBack
+DepthStencilState	EnableDepthTestWrite
+SamplerState		shadowSampler
+InputLayout			PT
+EffectMask			0x200

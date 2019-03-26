@@ -1,0 +1,17 @@
+#pragma pack_matrix( row_major )
+//--------------------------------------------------------------------------------------
+// CBuffers
+//--------------------------------------------------------------------------------------
+
+cbuffer ceveryFrame : register(b0)
+{
+	float4x4	viewProj   			: packoffset(c0);
+	float4x4	lightViewProj 	    : packoffset(c4);
+	float4		eyePosW				: packoffset(c8);     
+	float3		lightPos 			: packoffset(c9);	
+};
+
+cbuffer perObject : register(b1)
+{
+	matrix world                : packoffset(c0);
+};

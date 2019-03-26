@@ -1,0 +1,13 @@
+#pragma pack_matrix( row_major )
+
+cbuffer perFrame : register(b0)
+{
+
+	float4x4	lightViewProj 	    : packoffset(c4);
+	
+};
+
+cbuffer perObject
+{
+	matrix world;
+};

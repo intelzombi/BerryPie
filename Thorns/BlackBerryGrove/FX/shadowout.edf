@@ -1,0 +1,12 @@
+VertexShader		ShadowOut.vsh
+VSEntryPoint		ShadowOutVS
+VSConstantBuffer	LIGHTEQ_EF_VS
+PixelShader			ShadowOut.psh
+PSEntryPoint		ShadowOutPS
+PSConstantBuffer	NULL
+BlendState			NoBlending
+RasterizerState		CullNone
+DepthStencilState	EnableDepthTestWrite
+SamplerState		simpleSampler
+InputLayout			PT
+EffectMask			0x1

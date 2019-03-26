@@ -1,0 +1,10 @@
+
+struct SHADOW_PS_INPUT
+{
+	float4 pos : SV_POSITION;	
+};
+
+
+void ShadowMapPS( SHADOW_PS_INPUT input ) {}
+
+

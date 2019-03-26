@@ -1,0 +1,11 @@
+VertexShader		ShadowMap.vsh
+VSEntryPoint		ShadowMapVS
+VSConstantBuffer	SHADOW_EF_PER_FRAME
+PixelShader			ShadowMap.psh
+PSEntryPoint		ShadowMapPS
+PSConstantBuffer	SHADOW_EF_PER_FRAME
+BlendState			NoBlending
+RasterizerState		DepthBiasCullBack
+DepthStencilState	EnableDepthTestWrite
+SamplerState		shadowSampler
+InputLayout			PNT

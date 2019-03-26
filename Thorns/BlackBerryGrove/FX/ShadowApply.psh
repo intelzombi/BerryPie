@@ -1,0 +1,145 @@
+#include ShadowApplyPs.cb
+
+
+//--------------------------------------------------------------------------------------
+// Shader Structs
+//--------------------------------------------------------------------------------------
+
+
+struct PS_INPUT
+{
+	float4 pos : SV_POSITION;
+	float4 wpos : TEXCOORD0;
+	float4 lpos : TEXCOORD1;		//vertex with regard to light view
+	float3 normal : NORMAL;  
+};
+
+
+//--------------------------------------------------------------------------------------
+// Global Vars
+//--------------------------------------------------------------------------------------
+float4 ambient = float4(0.3f, 0.3f, 0.3f, 0.0f);
+float4 diffuse = float4(0.7f, 0.7f, 0.7f, 0.0f);	
+float shadowMapBias;
+uint2 shadowMapSize;
+
+//--------------------------------------------------------------------------------------
+// Shadow Map Samplers
+//--------------------------------------------------------------------------------------
+
+Texture2D shadowMap;
+SamplerState pointSampler;
+
+SamplerState bilinearSampler;
+
+SamplerComparisonState cmpSampler;
+
+
+
+
+//--------------------------------------------------------------------------------------
+// Pixel Shaders
+//--------------------------------------------------------------------------------------
+float4 PS_STANDARD( PS_INPUT input ) : SV_Target
+{
+	//re-homogenize position after interpolation
+	input.lpos.xyz /= input.lpos.w;
+
+	//if position is not visible to the light - dont illuminate it
+	//results in hard light frustum
+	if( input.lpos.x < -1.0f || input.lpos.x > 1.0f || 
+	    input.lpos.y < -1.0f || input.lpos.y > 1.0f ||
+	    input.lpos.z < 0.0f  || input.lpos.z > 1.0f ) return ambient;
+
+	//transform clip space coords to texture space coords (-1:1 to 0:1)	
+	input.lpos.x = input.lpos.x/2 + 0.5;
+	input.lpos.y = input.lpos.y/-2 + 0.5;
+	
+	//apply shadow map bias
+	input.lpos.z -= 0.0005f;  //shadowMapBias;
+
+	//sample shadow map - point sampler
+	float shadowMapDepth = shadowMap.Sample(pointSampler, input.lpos.xy).r;
+
+	//if clip space z value greater than shadow map value then pixel is in shadow
+	float shadowFactor = input.lpos.z <= shadowMapDepth;	
+	
+	//calculate ilumination at fragment
+	float3 L = normalize(lightPos - input.wpos.xyz);	
+	float ndotl = dot( normalize(input.normal), L);
+	return ambient + shadowFactor*diffuse*ndotl;
+}
+
+float4 PS_PCF( PS_INPUT input ) : SV_Target
+{
+	//re-homogenize position after interpolation
+	input.lpos.xyz /= input.lpos.w;
+
+	//if position is not visible to the light - dont illuminate it
+	//results in hard light frustum
+	if( input.lpos.x < -1.0f || input.lpos.x > 1.0f || 
+	    input.lpos.y < -1.0f || input.lpos.y > 1.0f ||
+	    input.lpos.z < 0.0f  || input.lpos.z > 1.0f ) return ambient;
+
+	//transform clip space coords to texture space coords (-1:1 to 0:1)	
+	input.lpos.x = input.lpos.x/2 + 0.5;
+	input.lpos.y = input.lpos.y/-2 + 0.5;
+	
+	//apply shadow map bias
+	input.lpos.z -= shadowMapBias;
+	
+	//basic hardware PCF - single texel
+	float shadowFactor = shadowMap.SampleCmpLevelZero( cmpSampler, input.lpos.xy, input.lpos.z );
+
+	//calculate ilumination at fragment
+	float3 L = normalize(lightPos - input.wpos.xyz);	
+	float ndotl = dot( normalize(input.normal), L);
+	return ambient + shadowFactor*diffuse*ndotl;
+}
+
+float2 texOffset( int u, int v )
+{
+	return float2( u * 1.0f/shadowMapSize.x, v * 1.0f/shadowMapSize.y );
+}
+
+float4 PS_PCF2( PS_INPUT input ) : SV_Target
+{
+	//re-homogenize position after interpolation
+	input.lpos.xyz /= input.lpos.w;
+
+	//if position is not visible to the light - dont illuminate it
+	//results in hard light frustum
+	if( input.lpos.x < -1.0f || input.lpos.x > 1.0f || 
+	    input.lpos.y < -1.0f || input.lpos.y > 1.0f ||
+	    input.lpos.z < 0.0f  || input.lpos.z > 1.0f ) return ambient;
+
+	//transform clip space coords to texture space coords (-1:1 to 0:1)	
+	input.lpos.x = input.lpos.x/2 + 0.5;
+	input.lpos.y = input.lpos.y/-2 + 0.5;
+	
+	//apply shadow map bias
+	input.lpos.z -= shadowMapBias;
+	
+	//PCF sampling for shadow map
+	float sum = 0;
+	float x, y;	
+
+	//perform PCF filtering on a 4 x 4 texel neighborhood
+	for (y = -1.5; y <= 1.5; y += 1.0)
+	{
+		for (x = -1.5; x <= 1.5; x += 1.0)
+		{
+			sum += shadowMap.SampleCmpLevelZero( cmpSampler, input.lpos.xy + texOffset(x,y), input.lpos.z );			
+		}
+	}
+
+	float shadowFactor = sum / 16.0;	 
+
+	//calculate ilumination at fragment
+	float3 L = normalize(lightPos - input.wpos.xyz);	
+	float ndotl = dot( normalize(input.normal), L);
+	return ambient + shadowFactor*diffuse*ndotl;
+}
+
+
+

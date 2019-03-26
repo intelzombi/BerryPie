@@ -1,0 +1,20 @@
+static const uint MAXLIGHTS = 3;
+static const float pi = 3.14159265;
+static const float piInv = 0.31830988;
+
+
+cbuffer ceveryframe : register(b0)
+{
+	float4x4 gViewProj;
+	float4 gEyePosW;
+	float4 gLightDir1W;
+	float4 gLightDir2W;
+	float4 gLightDir3W;
+	float3 gSpec;
+	float3 gEl1;
+	float3 gEl2;
+	float3 gEl3;
+	float  gmPow;
+	float3 fill;
+};
+

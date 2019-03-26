@@ -1,0 +1,194 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="Shaders">
+      <UniqueIdentifier>{4108d146-a664-403a-b7db-316393db9e14}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\Camera.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LOCAL_LIB\Source\CSVLogger.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LOCAL_LIB\Source\INIFileReader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LOCAL_LIB\Source\RandomNumber.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Light.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\SceneGraph.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Vector3.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\EffectsManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\BlackBerryGrove.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\ModelManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\ResourceManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Shuttle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Source\BlackBerryGrove.fx">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="ReadMe.txt" />
+    <None Include="BlackBerryGrove.ini" />
+    <None Include="tg1.tdf" />
+    <None Include="Source\ClassicLightEQ.fx">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Dragon.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="FX\ClassicLightEQ.edf">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="FX\ClassicLightEQTrns.edf">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="FX\default.edf">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="FX\LightEQ.psh">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="FX\LightEQ.vsh">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="FX\LightEQps.cb">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="FX\LightEQTrns.psh">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="FX\LightEQvs.cb">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="FX\ShadowApply.psh">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="FX\ShadowApply.vsh">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="FX\ShadowLightEQ.edf">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="FX\ShadowLightEQ.psh">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="FX\ShadowLightEQ.vsh">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="FX\ShadowMap.edf">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="FX\ShadowMap.psh">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="FX\ShadowMap.vsh">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="FX\ShadowMapLinear.edf">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="FX\ShadowMapLinear.psh">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="FX\ShadowMapLinear.vsh">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="FX\shadowout.edf">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="FX\ShadowOut.psh">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="FX\ShadowOut.vsh">
+      <Filter>Shaders</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Header\Camera.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LOCAL_LIB\Header\CSVLogger.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Header\Global.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LOCAL_LIB\Header\INIFileReader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Header\Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Header\stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Header\targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Header\Light.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Header\SceneGraph.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Header\Vector3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Header\EffectsManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Header\GlobalDecl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Header\BlackBerryGrove.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Header\ModelManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Header\ResourceManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Header\Shuttle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Header\BlackBerryGrove.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

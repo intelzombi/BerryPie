@@ -1,0 +1,12 @@
+VertexShader		LightEQ.vsh
+VSEntryPoint		lightEQVS
+VSConstantBuffer	LIGHTEQ_EF_VS
+PixelShader			LightEQTrns.psh
+PSEntryPoint		PSLightEQTrnsMain
+PSConstantBuffer	LIGHTEQ_EF_PS
+BlendState			TransparentAdd
+RasterizerState		CullNone
+DepthStencilState	EnableDepth
+SamplerState		simpleSampler
+InputLayout			PNT
+EffectMask			0x2
