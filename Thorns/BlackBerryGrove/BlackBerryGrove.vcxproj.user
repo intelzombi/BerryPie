@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LocalDebuggerCommandArguments>.\BlackBerryGrove.ini</LocalDebuggerCommandArguments>
+    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LocalDebuggerCommandArguments>.\BlackBerryGrove.ini</LocalDebuggerCommandArguments>
+    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LocalDebuggerCommandArguments>.\BlackBerryGrove.ini</LocalDebuggerCommandArguments>
+    <DebuggerFlavor>WindowsRemoteDebugger</DebuggerFlavor>
+    <RemoteDebuggerCommand>\\tablet3\Projects\BerryPie\Thorns\BlackBerryGrove\BlackBerryGrove.exe</RemoteDebuggerCommand>
+    <RemoteDebuggerCommandArguments>.\BlackBerryGrove.ini</RemoteDebuggerCommandArguments>
+    <RemoteDebuggerWorkingDirectory>\\tablet3\Projects\BerryPie\Thorns\BlackBerryGrove\</RemoteDebuggerWorkingDirectory>
+    <RemoteDebuggerServerName>tablet3</RemoteDebuggerServerName>
+    <RemoteDebuggerConnection>RemoteWithoutAuthentication</RemoteDebuggerConnection>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LocalDebuggerCommandArguments>.\blackberrygrove.ini</LocalDebuggerCommandArguments>
+    <DebuggerFlavor>WindowsRemoteDebugger</DebuggerFlavor>
+    <RemoteDebuggerCommand>\\tablet3\Projects\BerryPie\Thorns\BlackBerryGrove\BlackBerryGrove.exe</RemoteDebuggerCommand>
+    <RemoteDebuggerCommandArguments>.\BlackBerryGrove.ini</RemoteDebuggerCommandArguments>
+    <RemoteDebuggerServerName>tablet3</RemoteDebuggerServerName>
+    <RemoteDebuggerConnection>RemoteWithoutAuthentication</RemoteDebuggerConnection>
+    <RemoteDebuggerWorkingDirectory>\\tablet3\Projects\BerryPie\Thorns\BlackBerryGrove\</RemoteDebuggerWorkingDirectory>
+  </PropertyGroup>
+</Project>
