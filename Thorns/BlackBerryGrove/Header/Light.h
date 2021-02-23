@@ -2,6 +2,7 @@
 // copyright 2015
 // all rights reserved
 #pragma once
+#include <d3d11.h>
 #include <d3dx11.h>
 #include "camera.h"
 

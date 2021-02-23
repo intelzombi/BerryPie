@@ -5,6 +5,7 @@
 
 #include "D3D11.h"
 #include "D3DX11tex.h"
+#include <string>
 #include <vector>
 #include <map>
 
