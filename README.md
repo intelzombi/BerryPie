@@ -9,7 +9,7 @@ experience from my experience working at Intel on their graphics controllers and
 so many game developers and peeking deep into their rendering engines.  It isn't a small task and there are so many
 great tools out there that will do this for you. Unity or Unreal shortcuts all of this for you.
 
-#Maya assets
+# Maya assets
 The actual "Maya" model assets are not included in this project however they are reflected in the model files here.  I
 built a plugin for Maya that does a custom export of the assets into the model (what I call AX) files. Additionally, the
 plugin allowed for Texture and shader details (materials) to be output into the model file as well.  It was purely an
@@ -17,13 +17,13 @@ exercise in curiosity. FBX files and other formats are perfectly acceptable and 
 structures for all but custom rendering pipelines. That plugin is part of a separate repository that I have not made
 public at this point.
 
-#Asset Importer
+# Asset Importer
 Starting from the beginning of this repository project is the Asset importer I wrote. It takes those AX models that the
 Maya plugin created and imports them in. I'm highlighting this library, so it is clear where the assets are coming from
 in this rendering harness.
 This library is contained the root /extern folder. I it must be compiled as one of the library dependencies.
 
-#Blackberry Grove
+# Blackberry Grove
 This is the main project it is located under the Thorns directory.  It is a standard C++ windows based rendering engine.
 The BlackberryGrove.cpp file however is the only Windows specific file in the project.
 The folders of interest here:
@@ -49,7 +49,7 @@ other files are all the supporting functions; Scenegraph, ModelManager, Resource
     file.  I have other rendering engines in Linux that I didn't want to have to rewrite all of the core transform
     pieces.
 
-#Running the rendering engine.
+# Running the rendering engine.
 After Compiling it BlackberryGrove.exe will need to have an ini file passed into it.  Note the BlackBerryGrove.ini file
 in the BlackBerryGrove directory.  This is the file you pass in as a command line parameter to the exe.
 note the different scenes to load
