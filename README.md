@@ -1,5 +1,4 @@
-
-#Berry Pie Rendering Engine
+# Berry Pie Rendering Engine
 
 Blackberry pie is a rendering and asset pipeline that I created. That is to say I wrote the code that is contained in
 this repository.  My motivation was to really drive an entire rendering pipeline from Artist tools all the way to the
