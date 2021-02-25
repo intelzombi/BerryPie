@@ -1,7 +1,7 @@
 # Berry Pie Rendering Engine
 
 
-[Blackberry pie][berrypie link] is a rendering and asset pipeline that I created. That is to say I wrote the code that is contained in
+[Blackberry pie](https://www.youtube.com/watch?v=sxWhtHjwTIQ) is a rendering and asset pipeline that I created. That is to say I wrote the code that is contained in
 this repository.  My motivation was to really drive an entire rendering pipeline from Artist tools all the way to the
 shaders and draw calls.  This is written in C++ using DirectX 11.  Included here is a full pipeline of tools. I tried
 mimick what real game engines use.  I'm not suggesting this is the basis for a game engine, but it would make a good
@@ -9,7 +9,7 @@ study for those interested in the components used in a game engine. My backgroun
 experience from my experience working at Intel on their graphics controllers and being fortunate enough to work with
 so many game developers and peeking deep into their rendering engines.  It isn't a small task and there are so many
 great tools out there that will do this for you. Unity or Unreal shortcuts all of this for you.
-[berrypie link]:https://www.youtube.com/watch?v=sxWhtHjwTIQ
+
 ## Maya assets
 The actual "Maya" model assets are not included in this project however they are reflected in the model files here.  I
 built a plugin for Maya that does a custom export of the assets into the model (what I call AX) files. Additionally, the
