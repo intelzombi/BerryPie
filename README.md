@@ -1,6 +1,7 @@
 # Berry Pie Rendering Engine
 
-Blackberry pie is a rendering and asset pipeline that I created. That is to say I wrote the code that is contained in
+
+[Blackberry pie][berrypie link] is a rendering and asset pipeline that I created. That is to say I wrote the code that is contained in
 this repository.  My motivation was to really drive an entire rendering pipeline from Artist tools all the way to the
 shaders and draw calls.  This is written in C++ using DirectX 11.  Included here is a full pipeline of tools. I tried
 mimick what real game engines use.  I'm not suggesting this is the basis for a game engine, but it would make a good
@@ -8,8 +9,8 @@ study for those interested in the components used in a game engine. My backgroun
 experience from my experience working at Intel on their graphics controllers and being fortunate enough to work with
 so many game developers and peeking deep into their rendering engines.  It isn't a small task and there are so many
 great tools out there that will do this for you. Unity or Unreal shortcuts all of this for you.
-
-# Maya assets
+[berrypie link]:https://www.youtube.com/watch?v=sxWhtHjwTIQ
+## Maya assets
 The actual "Maya" model assets are not included in this project however they are reflected in the model files here.  I
 built a plugin for Maya that does a custom export of the assets into the model (what I call AX) files. Additionally, the
 plugin allowed for Texture and shader details (materials) to be output into the model file as well.  It was purely an
@@ -17,13 +18,13 @@ exercise in curiosity. FBX files and other formats are perfectly acceptable and 
 structures for all but custom rendering pipelines. That plugin is part of a separate repository that I have not made
 public at this point.
 
-# Asset Importer
+## Asset Importer
 Starting from the beginning of this repository project is the Asset importer I wrote. It takes those AX models that the
 Maya plugin created and imports them in. I'm highlighting this library, so it is clear where the assets are coming from
 in this rendering harness.
 This library is contained the root /extern folder. I it must be compiled as one of the library dependencies.
 
-# Blackberry Grove
+## Blackberry Grove
 This is the main project it is located under the Thorns directory.  It is a standard C++ windows based rendering engine.
 The BlackberryGrove.cpp file however is the only Windows specific file in the project.
 The folders of interest here:
@@ -49,7 +50,7 @@ other files are all the supporting functions; Scenegraph, ModelManager, Resource
     file.  I have other rendering engines in Linux that I didn't want to have to rewrite all of the core transform
     pieces.
 
-# Running the rendering engine.
+## Running the rendering engine.
 After Compiling it BlackberryGrove.exe will need to have an ini file passed into it.  Note the BlackBerryGrove.ini file
 in the BlackBerryGrove directory.  This is the file you pass in as a command line parameter to the exe.
 note the different scenes to load
@@ -80,7 +81,7 @@ Resolution of window
 - RESOLUTIONHEIGHT=900
 - WINDOWEDMODE=0
 
-# Controls
+## Controls
 First lets talk about Locking and not locking.  As a framework this just gives you some hacky but interesting controls.
 - 'L','U' lock and unlock. This is 'Not' the camera lock in the ini file.  This lock toggles between light control and
 Camera control. It is defaulted to camera.
@@ -116,12 +117,12 @@ Camera control. It is defaulted to camera.
     - VK_UP       Light1.pitch(-0.01f);
     - VK_DOWN     Light1.pitch(0.01f);
 
-# Scene Files
+## Scene Files
 - ShadowExample.ax" Jack in the box with a background to view shadows with.
 - GhostTown_Scene.ax"
 - Ghost_Plane_Game.ax"
 
-# Code Points
+## Code Points
 There are places in the code that you can display the actual shadow map being generated. In the CreateSceneGraph 
 in BlackBerryGrove.cpp look for a comment: "display Depth Buffer Scene Item."
 
