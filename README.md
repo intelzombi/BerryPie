@@ -40,8 +40,15 @@ Asset Importer finds and processes on request.   In here notice there are a coup
   it has the complete model and material definitions for a complete scene.
 
 - Header and Source: These contain what you would expect.  BlackberryGrove.cpp is the main rendering engine core. The
-other files are all the supporting functions; Scenegraph, ModelManager, ResourceManager, EffectsManager, Camera, Light.
-  A couple of other items you might find interesting.
+other files are all the supporting functions:
+  - Scenegraph 
+  - ModelManager
+  - ResourceManager
+  - EffectsManager
+  - Camera
+  - Light.
+
+A couple of other items you might find interesting.
   - I added a shuttle class.  This will look a lot like a camera from
   a transform perspective but it is something that is attached to a model and then can be controlled with user input. In
   the Ghost_Plane_Game.ax (the default) scene the Plane has an associated shuttle attached you can see how it works.
